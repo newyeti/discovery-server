@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   discovery-server:
-    container_name: datahub-discovery-server
+    container_name: newyeti-discovery-server
     image: sachindramaharjan/newyeti-discovery-server:latest
     pull_policy: always
     ports:
