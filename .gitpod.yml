@@ -7,7 +7,7 @@
 tasks:
   - init: make build-image-only
     env:
-      M2_HOME: $THEIA_WORKSPACE_ROOT/maven-settings.xml
+      M2_HOME: maven-settings.xml
 
 image:
   file: .gitpod.Dockerfile

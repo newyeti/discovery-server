@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  discovery-server:
+    container_name: datahub-discovery-server
+    image: sachindramaharjan/newyeti-discovery-server:latest
+    pull_policy: always
+    ports:
+      - 8761:8761
