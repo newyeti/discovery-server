@@ -5,6 +5,9 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - init: ./mvnw install -DskipTests=false
+  - init: make build-image-only
+    env:
+      M2_HOME: $THEIA_WORKSPACE_ROOT/maven-settings.xml
 
-
+image:
+  file: .gitpod.Dockerfile
